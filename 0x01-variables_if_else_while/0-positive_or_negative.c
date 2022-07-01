@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main -> assign a random number to the variable n each time it is executed and print
+ * main -> assign a random number to the variable n each time it is executed and prints out
  * based a condition
  * Return : always 0
  */
@@ -21,5 +21,7 @@ if (n < 0)
 {
 	printf("%d is negative\n", n);
 }
+{
 return (0);
+}
 }
