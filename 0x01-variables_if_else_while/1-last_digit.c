@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main -> this prints the last digit random number in variable n
  * Return : 0 if (successful)
