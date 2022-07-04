@@ -5,17 +5,19 @@
 */
 int main(void)
 {
+unsigned char a = '0';
 int i;
-char ch;
-for (n = 48; n < 58; n++)
+for (i = 0; i < 10; i++)
 {
-putchar(n);
+putchar(a);
+a++
 }
-for (ch = 'a'; c <= 'f'; ch++)
+a = 'i'
+for (i = 0; i < 6; i++)
 {
-putchar(ch);
+putchar('0' + a);
+a++;
 }
 putchar('\n');
 return (0);
 }
-
