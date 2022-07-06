@@ -15,7 +15,7 @@ while (a <= 9)
 {
 	b = 0;
 	while(b <= 9)
-	{
+ 		{	
 	rep = a * b;
 	if (b == 0)
 	{
