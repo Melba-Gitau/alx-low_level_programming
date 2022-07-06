@@ -1,82 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* upperband - print greater than 98
-* @n: number to start from
-* Return: void
+* print_to_98 - print all numbers from input to 98
+* @n: starting point
+* Return: void returns nothing
 */
-void upperband(int n)
-{
-while (n > 98)
-{
-	if (n >= 100)
-	{
-		_putchar(n / 100 + 48);
-		_putchar((n % 100) / 10 + 48);
-		_putchar((n % 100) % 10 + 48);
-	}
-	else
-	{
-		_putchar((n % 100) / 10 + 48);
-		_putchar((n % 100) % 10 + 48);
-	}
-	_putchar(',');
-	_putchar('_');
-	n--;
-}
-/**
-* lowerband - prints lesser than 98
-* @n: number to start from
-* Return: void
-*/
-void lowerband(int n)
-{
-while (n < 98)
-{
-	if (n < 98)
-	{
-		_putchar((n / 10) + 48);
-		_putchar((n % 10) + 48);
-	}
-	else if (n >= 0)
-	{
-		_putchar(n + 48);
-	}
-	else if (n > -10)
-	{
-		_putchar('-');
-		_putchar((n / 10) * -1 + 48);
-	}
-	else if (n > -100)
-	{
-		_putchar('-');
-		_putchar((n / 10) * -1 + 48);
-		_putchar((n % 10) * -1 + 48);
-	}
-	else
-	{
-		_putchar(',');
-		_putchar(-1 * (n / 100) + 48);
-		_putchar(-1 * (n % 100) / 10 + 48);
-		_putchar(-1 * (n % 100) % 10 + 48);
-	}
-	_putchar(',');
-	_putchar('_');
-	n++;
-}
-}
 
-/**
-* print_to_98 - print any number to 98
-* @n: number to start from
-* Return: return result
-*/
 void print_to_98(int n)
 {
-	upperband(n);
-	lowerband(n);
-	_putchar((98 / 10) + 48);
-	_putchar((98 % 10) + 48);
-	putchar('\n');
+	if (n <= 98)
+		for (n = n; n <= 97 ; n++)
+			printf("%d, ", n);
+	else
+		for (n = n; n > 98 ; n--)
+			printf("%d, ", n);
+	printf("98\n");
 }
-
