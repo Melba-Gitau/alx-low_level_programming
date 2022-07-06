@@ -18,7 +18,7 @@ while (a <= n)
 {
 	for (b = 0; b <= n; b++)
 	{
-		rep a * b
+		rep a * b;
 	}
 }
 }
