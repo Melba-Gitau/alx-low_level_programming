@@ -1,24 +1,41 @@
 #include "main.h"
 
 /**
-* print_times_table - prints times table
-* @n : times table to use
-* Description: prints the times table
+* upperband - print greater than 98
+* @n: number to start from
 * Return: void
 */
-
-void prints_times_table(int n)
+void upperband(int n)
 {
-
-int a = 0, rep, b;
-
-if (n < 0 || n > 15)
-	return;
-while (a <= n)
+while (n > 98)
 {
-	for (b = 0; b <= n; b++)
+	if (n >= 100)
 	{
-		rep a * b;
+		_putchar(n / 100 + 48);
+		_putchar((n % 100) / 10 + 48);
+		_putchar((n % 100) % 10 + 48);
 	}
+	else
+	{
+		_putchar((n % 100) / 10 + 48);
+		_putchar((n % 100) % 10 + 48);
+	}
+	_putchar(',');
+	_putchar('_');
+	n--;
 }
-}
+/**
+* lowerband - prints lesser than 98
+* @n: number to start from
+* Return: void
+*/
+void lowerband(int n)
+{
+while (n < 98)
+{
+	if (n < 98)
+	{
+		_putchar((n / 10) + 48);
+		_putchar((n % 10) + 48);
+	}
+	elseif (n >= 0)
