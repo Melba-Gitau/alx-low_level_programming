@@ -39,6 +39,5 @@ while (a <= 9)
 _putchar('\n');
 a++;
 }
-
 }
 
