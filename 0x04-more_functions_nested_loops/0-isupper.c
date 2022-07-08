@@ -7,5 +7,9 @@
  */
 int _isupper(int c)
 {
+<<<<<<< HEAD
 	return (c >= 'A' && c <= 'Z');
+=======
+	return(c >= 'A' && c <= 'Z');
+>>>>>>> 81f03c5c2148ba8767121fb62c9bbb7239ab3310
 }
