@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-int p;
+int p = 100;
 int i;
 
 i = 1;
@@ -34,6 +34,6 @@ while(i <= p)
 	}
 	i++;
 }
-printf('\n');
+printf("\n");
 return (0);
 }
