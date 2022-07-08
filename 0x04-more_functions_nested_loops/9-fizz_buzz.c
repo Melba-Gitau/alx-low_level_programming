@@ -5,34 +5,27 @@
  */
 int main(void)
 {
-int p = 100;
 int i;
 
-i = 1;
-while (i <= p)
+for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
-printf("FizzBuzz ");
+printf(" FizzBuzz");
 }
-else if (i % 3 == 0)
+else if (i % 3 == 0 && i % 5 != 0)
 {
-printif("Fizz ");
+printif(" Fizz");
 }
-else if (i % 5 == 0)
+else if (i % 5 == 0 && i % 3 != 0)
 {
-if (i < p)
-printf("Buzz ");
-
-else
-printf("Buzz");
+printf(" Buzz");
 }
-else
+else if (i == 1)
 {
-printf("%i ", i);
+printf("%d", i);
 }
-i++;
 }
-printf('\n');
+printf("\n");
 return (0);
 }
