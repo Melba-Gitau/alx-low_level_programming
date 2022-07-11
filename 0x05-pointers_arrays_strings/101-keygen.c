@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generation random valid passwords
- * Return: 0 (Success)
+ * main - generates random valid passwords
+ * Return: 0 (Success).
  */
 int main(void)
 {
