@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_buffer - C function that prints the content of an
  *  inputted number of bytes from a buffer
@@ -13,6 +14,7 @@
  * If the inputted byte size is 0 or less, the function only prints a new line.
  * @b: number of bytes
  * @size: size of byte
+ * Return: Always 0
  */
 void print_buffer(char *b, int size)
 {
