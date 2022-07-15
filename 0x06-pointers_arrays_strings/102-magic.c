@@ -1,9 +1,5 @@
 #include <stdio.h>
-#include "main.h"
-/**
- * main - C function to print
- * Return: Always 0 (Success)
- */
+
 int main(void)
 {
 	int n;
