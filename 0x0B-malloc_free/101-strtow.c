@@ -3,7 +3,7 @@
 /**
  * wordnos - counts no of words in a given string
  * @s: pointer to the string
- * Return: No. of words in the string(int)
+ * Return: No. of words in the string (int)
  */
 int wordnos(char *s)
 {
@@ -56,7 +56,8 @@ char **strtow(char *str)
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
-					*tmp = '\0';
+					*tmp++ = str[start++];
+				*tmp = '\0';
 				matrix[k] = tmp - c;
 				k++;
 				c = 0;
