@@ -30,7 +30,7 @@ int main(int args, char *argv[])
 		else if (c >= 10)
 			c -= 10;
 
-		else if(c >= 5)
+		else if (c >= 5)
 			c -= 5;
 
 		else if (c >= 2)
