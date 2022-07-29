@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
 
 /**
- * calloc -> calloc library internally implemented
- * @nmemb: param 1
- * @size: param 2
+ * calloc -> allocates memory of an array using malloc.
+ * @nmemb: number of elements in array.
+ * @size: size of elements of array.
  * Return: NULL is size or nmemb == 0.
  * NULL if malloc fails.
  * Pointer to memory alllocated if successful.
@@ -17,10 +16,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	p = malloc(size * nmemb);
-	if (p = NULL)
+	p = malloc(nmemb * size);
+	if (p == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	for (i = 0; i < (nmemb * size); i++)
 	{
