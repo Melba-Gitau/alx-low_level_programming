@@ -6,22 +6,25 @@
  * calloc -> calloc library internally implemented
  * @nmemb: param 1
  * @size: param 2
+ * Return: NULL is size or nmemb == 0.
+ * NULL if malloc fails.
+ * Pointer to memory alllocated if successful.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem;
-	char *filler;
-	unsigned int index;
+	void *p;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	mem = malloc(size * nmemb);
-	if (mem = NULL)
-		return NULL;
-	filler = mem;
-	for (index = 0; index < (size * nmemb); index++)
+	p = malloc(size * nmemb);
+	if (p = NULL)
 	{
-		filler[index] = '\0';
+		return NULL;
 	}
-	return (mem);
+	for (i = 0; i < (nmemb * size); i++)
+	{
+		*((char *)(p) + i) = 0;
+	}
+	return (p);
 }
