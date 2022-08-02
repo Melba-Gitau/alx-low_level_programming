@@ -2,16 +2,16 @@
 #define STRTYP
 
 /**
- * struct dog -structure of dog
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
+ * struct dog -structure of dog.
+ * @name: name of dog.
+ * @age: age of dog.
+ * @owner: owner of dog.
  */
 struct dog
 {
 	char *name;
 	float age;
-	char *owner
+	char *owner;
 };
 
 typedef struct dog dog_t;
