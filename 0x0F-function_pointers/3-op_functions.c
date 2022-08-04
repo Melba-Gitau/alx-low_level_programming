@@ -1,8 +1,8 @@
 #include "3-calc.h"
 
 /**
- * op_add - adds two numbers
- * @a: first number
+ * op_add - adds two numbers.
+ * @a: first number.
  * @b: second number.
  *
  * Return: add.
@@ -47,7 +47,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - calculates the module of two numbers
+ * op_mod - calculates the module of two numbers.
  * @a: first number.
  * @b: second number.
  * Return: remainder of division.
