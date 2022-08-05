@@ -1,6 +1,6 @@
 /*
  * File: 0-sum_them_all.c
- * Auth: <stdarg.h>
+ * Auth: Tolulope Fakunle
  */
 
 #include "variadic_functions.h"
